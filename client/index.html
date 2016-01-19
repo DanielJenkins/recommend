@@ -5,6 +5,11 @@
     <script src="vendor.js"></script>
     <script src="all.js"></script>
   </head>
-  <a href="#/join">Login | Join</a>
-  <div ng-view></div>
+  <body>
+    <a href="#/join">Login | Join</a>
+    <div ng-view></div>
+    <div ng-controller="homeController as home">
+      <h3>{{home.name}}</h3>
+    </div>
+  </body>
 </html>
