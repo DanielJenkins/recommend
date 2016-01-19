@@ -10,7 +10,13 @@
     <div ng-view></div>
     <div ng-controller="homeController as home">
       <h4>{{home.name}}</h4>
-      <h4>{{home.theDate | date: 'shortDate'}}</h4>
+      <h4>Today is:
+        {{home.theDate | date: 'shortDate'}}
+      </h4>
+      <p>
+        {{error}}
+        {{home.data}}
+      </p>
     </div>
   </body>
 </html>
