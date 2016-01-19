@@ -5,4 +5,6 @@ var join = require('./routes/join.js')
 app.use(express.static('server/public'));
 app.use('/join/', join);
 
-app.listen(1337);
+app.listen(1337, function() {
+  console.log('App is running!');
+});
