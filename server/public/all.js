@@ -1,0 +1,24 @@
+angular.module('recommend', ['ngRoute']);
+
+angular.module('recommend')
+  .config(['$routeProvider', function($routeProvider) {
+    $routeProvider
+      .when("/join", {
+        templateUrl: "app/join/join.html",
+        controller: "joinController",
+        controllerAs: "join"
+      });
+  }])
+
+angular.module('recommend')
+   .controller('homeController', function() {
+     vm = this;
+     this.name = "Sammy";
+     this.theDate = new Date();
+   });
+angular.module('recommend')
+   .controller('joinController', function() {
+     vm = this;
+     vm.title = 'Join Us.';
+     vm.fish  = 'Salmon.';
+   });
